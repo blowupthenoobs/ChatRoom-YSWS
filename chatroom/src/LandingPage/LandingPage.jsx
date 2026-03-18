@@ -15,7 +15,7 @@ export default function LandingPage() {
     }
 
     return (
-        <div className="ml-3 h-[150vh]">
+        <div className="ml-3">
             <h1 className="text-[50px] text-black pt-[10px]">Welcome to Chatroom</h1>
             <div className="bg-orange-300 h-[40vh] w-[60%] rounded-md place-self-center text-center content-center">
                 <p>insert basic example of chatroom here</p>
@@ -101,7 +101,7 @@ export default function LandingPage() {
                 </>}
             </div>
 
-            <div className="bg-white w-[600px] place-self-center mt-[10px]">
+            <div className="bg-white w-[600px] place-self-center mt-[10px] mb-10">
                 <h3 className="text-[30px] border-black border-[1.5px] cursor-pointer" onClick={() => expandTab("cntprjt")}>Can I continue working on old projects? \/</h3>
                 {openTab === "cntprjt"?
                 <>
@@ -110,6 +110,8 @@ export default function LandingPage() {
                 <>
                 </>}
             </div>
+
+            <div className="h-10 m-10"></div>
         </div>
     )
 }
