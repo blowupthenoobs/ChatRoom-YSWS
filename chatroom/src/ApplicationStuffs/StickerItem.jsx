@@ -5,7 +5,7 @@ function StickerItem ({index}) {
 
     return(
         <div>
-            <img src={sticker[index]} className="h-[100px]"/>
+            <img src={sticker[index]} className="h-[100px]" alt=""/>
         </div>
     )
 }

@@ -31,7 +31,7 @@ function TextMessageBox ({text, user, fromThisUser = false, showpfp = true, stic
                         }`}>{text}</h1>)}
                     
 
-                    {sticker != -1 && (<StickerItem index={sticker}/>)}
+                    {sticker !== -1 && (<StickerItem index={sticker}/>)}
                 </div>
                 
             </div>
