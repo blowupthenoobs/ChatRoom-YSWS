@@ -1,7 +1,7 @@
 
 
 function StickerItem ({index}) {
-    const sticker = ["/Stickers/hcyay.gif"]
+    const sticker = ["/Stickers/hcyay.gif", "/Stickers/orpheusBox.png", "/Stickers/starEmoji.png", "/Stickers/strawberryEmoji.png"]
 
     return(
         <div>

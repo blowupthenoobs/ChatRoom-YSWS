@@ -2,15 +2,24 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 
 import NavBar from "./NavBar";
+import ProjectItem from "./ProjectItem";
+import MakeNewProjectButton from "./MakeNewProjectButton";
 
 export default function ProjectsPage() {
 
     return (
-        <div className="">
+        <div className="flex flex-col">
             <NavBar/>
-            <div>   {/* can't have margins here for some reason */}
-                
+            <div className="w-[calc(100%-70px)] ml-auto">
+                <h1 className="text-[50px]">Projects</h1>
+                <div className="w-full ml-20 place-self-center rounded-lg pt-[40px] flex flex-row flex-wrap gap-x-[20px] gap-y-5">
+                    <ProjectItem/>
+                    <ProjectItem/>
+                    <ProjectItem/>
+                    <MakeNewProjectButton/>
+                </div>
             </div>
+            
         </div>
     )
 }
