@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 
+import TextMessageBox from "../ApplicationStuffs/TextMessageBox";
+
 export default function LandingPage() {
     const navigate = useNavigate();
 
@@ -18,7 +20,12 @@ export default function LandingPage() {
         <div className="ml-3">
             <h1 className="text-[50px] text-black pt-[10px]">Welcome to Chatroom</h1>
             <div className="bg-orange-300 h-[40vh] w-[60%] rounded-md place-self-center text-center content-center">
-                <p>insert basic example of chatroom here</p>
+                <div className="w-[95%] h-[90%] bg-white rounded-md place-self-center flex flex-col justify-end p-2">
+                        <TextMessageBox user={"blowupthenoobs"} text="I just made a textbox!" fromThisUser={false}/>
+                        <TextMessageBox user={"Jeffery"} text="Congrats man! nice job staying on schedule" fromThisUser={true}/>
+                        <TextMessageBox user={"Jeffery"} sticker={0} fromThisUser={true} showpfp={false}/>
+                        <TextMessageBox user={"blowupthenoobs"} text="testing a really long text block to see what will happen, this is kinda important to know for the styling cuz it'll let me know how big messages will look on the website when someone enevitably sends one" fromThisUser={false} showpfp={true}/>
+                    </div>
             </div>
             <br/>
             <p className="text-[20px] w-[500px] place-self-center">Meet a small group of people to help keep you accountable and motivated to accomplish your goals and earn rewards along the way!</p>

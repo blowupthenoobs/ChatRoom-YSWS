@@ -12,9 +12,7 @@ export default function ProjectsPage() {
             <NavBar/>
             <div className="w-[calc(100%-70px)] ml-auto">
                 <h1 className="text-[50px]">Projects</h1>
-                <div className="w-full ml-20 place-self-center rounded-lg pt-[40px] flex flex-row flex-wrap gap-x-[20px] gap-y-5">
-                    <ProjectItem/>
-                    <ProjectItem/>
+                <div className="w-full p-20 place-self-center rounded-lg pt-[40px] flex flex-row flex-wrap gap-x-[5%] gap-y-10">
                     <ProjectItem/>
                     <MakeNewProjectButton/>
                 </div>

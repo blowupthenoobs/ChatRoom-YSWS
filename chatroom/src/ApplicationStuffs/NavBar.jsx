@@ -6,6 +6,8 @@ import { RiComputerLine } from "react-icons/ri";
 
 import { HiOutlineFolderOpen } from "react-icons/hi2";
 
+import { BsShop } from "react-icons/bs";
+
 export default function NavBar() {
     const navigate = useNavigate();
     const location = useLocation();
@@ -23,6 +25,11 @@ export default function NavBar() {
                     ? "text-black"
                     : "text-orange-200"
                 }`} onClick={() => navigate("/projects")}><HiOutlineFolderOpen className="w-full text-[200%]"/></button>
+            <button className={`w-[90%] aspect-square mt-1 rounded-md border-t border-b border-orange-200] bg-[#fdbd79]
+                ${ currentPath === "/shop"
+                    ? "text-black"
+                    : "text-orange-200"
+                }`} onClick={() => navigate("/")}><BsShop className="w-full text-[200%]"/></button>
         </div>
     )
 }
