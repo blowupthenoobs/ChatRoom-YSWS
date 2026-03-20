@@ -16,7 +16,8 @@ export default function ProjectPage() {
         <div className="flex flex-col">
             <NavBar/>
             <div className="w-[calc(100%-70px)] ml-auto">
-                <h1 className="text-[50px]">YSWS Pitch</h1>
+                <input className="h-[50px] text-[50px] text-center p-[10px] pt-[20px] pb-[20px] rounded-md place-self-center mt-5" value={"YSWS Pitch"}/>
+                {/* <h1 className="text-[50px]">YSWS Pitch</h1> */}
 
                 <div className="w-[70%] place-self-center mt-20 flex flex-row bg-orange-300 rounded-lg">
                     <div className="flex flex-col p-5 w-[30%]">
@@ -41,17 +42,27 @@ export default function ProjectPage() {
                     
                 </div>
 
-                <div className="w-[70%] p-5 place-self-center mt-20 bg-orange-300 rounded-lg">
+                <div className="w-[70%] h-[calc(60vh+100px)] p-5 place-self-center mt-20 bg-orange-300 rounded-lg">
                     <h1 className="text-[40px]">Project Timeline</h1>
-                    <div className="ml-1 flex w-full">
+                    <div className="ml-1 flex w-full items-center">
                         {/* <div className="w-[50px] mb-auto aspect-square bg-black rounded-full shrink-0 "></div> */}
-                        <TimelineDot/>
+                        <TimelineDot requiredText={"start"}/>
                         <TimelineDash/>
-                        <TimelineDot size={30}/>
+                        <TimelineDot size={25} lineLength={30} presetGoal="Finish Landingpage" presetTimeline="2026-03-17"/>
                         <TimelineDash/>
-                        <TimelineDot/>
+                        <TimelineDot size={30} lineLength={20} presetGoal="Finish Homepage" presetTimeline="2026-03-18"/>
+                        <TimelineDash/>
+                        <TimelineDot size={20} lineLength={25} presetGoal="Finish Projects Menu" presetTimeline="2026-03-19"/>
+                        <TimelineDash/>
+                        <TimelineDot size={35} lineLength={20} presetGoal="Write Individual Project Page" presetTimeline="2026-03-20"/>
+                        <TimelineDash/>
+                        <TimelineDot size={15} lineLength={30} presetGoal="Submit!" presetTimeline="2026-03-21"/>
+                        <TimelineDash/>
+                        <TimelineDot requiredText={"end"}/>
                     </div>
                 </div>
+
+                <div className="h-[25vh]"></div>
                 
             </div>
             
