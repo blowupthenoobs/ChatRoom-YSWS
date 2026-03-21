@@ -32,7 +32,7 @@ export default function ProjectPage() {
 
                         <div className="w-[50%] place-self-center">
                             <h3 className="text-left ml-2 text-[20px]">Demo Link</h3>
-                            <input type="text" placeholder="https://blowupthenoobs.dev" className="w-full p-3 rounded-md place-self-center"/>
+                            <input type="text" placeholder="https://blowupthenoobs.dev" className="w-full p-3 rounded-md place-self-center" value={"https://chatroom-ysws.netlify.app/"}/>
                         </div>
                         <div className="w-[100%] place-self-center mt-2">
                             <h3>Say a bit about your project</h3>
